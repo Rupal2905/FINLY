@@ -1,0 +1,257 @@
+/* General Page Styling */
+body {
+    background-color: #000;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+/* Navigation Bar */
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 80px;
+    background-color: black;
+    position: fixed;
+    width: 90%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+.nav-links a:hover {
+    color: #71bef1;
+}
+.nav-brand {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+/* Hero Section */
+.hero-section {
+    text-align: center;
+    margin-top: 150px;
+}
+.hero-title {
+    font-size: 125px;
+    font-weight: 800;
+    margin-bottom: -10px;
+    background: linear-gradient(90deg, #01c4f5, #0dcbfa,  #e730ff,  #b712bd);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -o-background-clip: text;
+    -ms-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+    letter-spacing: -.02em;
+}
+
+.dashboard-text {
+    color: #fff;  
+    background: none;
+    font-size: 125px;
+    font-weight: 750;
+    letter-spacing: -.02em;  
+}
+
+.hero-subtitle {
+    font-size: 35px;
+    color: #ffffff;
+    padding-right: 45px;
+    padding-left: 45px;
+    padding-top: 20px;
+}
+
+.video-container {
+    margin-top: 80px;
+    margin-bottom: 50px;  
+    text-align: center;  
+}
+
+video {
+    width: 100%;
+    max-width: 1300px;  
+    border-radius: 30px;  
+}
+
+
+/* Stock Screener Card */
+.card-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px auto;
+    max-width: 1400px;
+    padding: 0px;
+    background: transparent;
+    border-radius: 15px;
+}
+.card-text {
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;  
+    align-items: center;  
+    text-align: center;  
+    padding-right: 40px;
+    padding-left: 100px;
+    padding-bottom: 20px;
+    color: #fff;
+}
+.card-text h2 {
+    color: #ffffff;
+    font-family: EuclidCircularSemibold, sans-serif;
+    font-feature-settings: "tnum" on, "lnum" on;
+    font-size: 90px;
+    font-weight: bolder;
+    margin-bottom: 10px;
+    letter-spacing: -.04em;
+}
+.card-text p {
+    font-family: -apple-system, BlinkMacSystemFont, Trebuchet MS, Roboto, Ubuntu, sans-serif;
+    text-align: center;
+    font-size: 30px;
+    color: #ffffff;
+    margin-bottom: 40px;
+}
+.card-button {
+    text-align: center;
+    padding: 20px 30px;
+    margin-bottom: 30px;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    border: 1px solid #fff;
+    border-radius: 400px;
+    cursor: pointer;
+    transition: background 0.3s;
+    text-decoration: none;
+    display: inline-block;
+
+}
+.card-button:hover {
+    background: #312f31;
+}
+
+.card-image img {
+    width: 100%;
+    max-width: 1100px;
+    border-radius: 10px;
+    box-shadow: 10px 0 60px rgba(110, 4, 136, 0.8),  
+                -10px 0 60px rgba(13, 110, 175, 0.8); 
+}
+
+/* Bottom Card Styling */
+.card-container .card-text {
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;  
+    align-items: center;  
+    text-align: center;  
+    padding-right: 40px;
+    padding-left: 100px;
+    padding-bottom: 20px;
+    color: #fff;
+}
+
+.card-container .card-image {
+    width: 100%;
+    max-width: 1100px;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #00bce6, #2962ff 50.31%, #d500f9);
+}
+
+.cardsBlock-QxdphXcR {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 40px; 
+    padding: 40px 0;
+    max-width: 1200px;
+    margin: 0 auto; 
+}
+
+.wrapper-TWgSvqxI {
+    background-color: transparent;
+    border: 0.5px solid #727070;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s ease;
+    padding: 20px; 
+    height: 0;
+    padding-bottom: 100%; 
+    position: relative;
+}
+
+.wrapper-TWgSvqxI:hover {
+    transform: scale(1.05);
+}
+
+.textWrapper-QxdphXcR {
+    padding: 20px;
+    text-align: center;
+}
+
+.cardTitle-QxdphXcR {
+    font-size: 40px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.description-QxdphXcR {
+    font-size: 20px;
+    color: #aaa;
+}
+
+.videoWrapper-QxdphXcR video {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.actionButton-TWgSvqxI {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.actionIcon-TWgSvqxI {
+    fill: #fff;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    }
+    #tradingview_1dcca{
+        width: 100%;
+        height: 100vh;
+        
+        }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+            
+    }
+    #tradingview-widget-container__widget{
+        width: 100%;
+        height: 100vh;
+                
+        }
+        
