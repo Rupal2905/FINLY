@@ -37,6 +37,9 @@ body {
     font-weight: bold;
     color: white;
 }
+.nav-brand .logo {
+    height: 60px;   
+}
 
 /* Hero Section */
 .hero-section {
