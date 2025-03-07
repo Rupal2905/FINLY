@@ -1,0 +1,175 @@
+/* Body and page background */
+html, body {
+  background-color: #EBECF0;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: -0.2px;
+  color: #BABECC;
+}
+
+/* Base styles for text, inputs, buttons */
+body, p, input, select, textarea, button {
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+/* Navigation Bar */
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 80px;
+  background-color: black;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  transition: color 0.3s;
+}
+.nav-links a:hover {
+  color: #71bef1;
+}
+.nav-brand {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+}
+.nav-brand .logo {
+  height: 40px;
+  
+}
+
+h1 {
+  margin: 0;
+  font-size: 2rem; /* Adjust to taste */
+  color: #b4b8c5;
+  text-shadow: 1px 1px 1px #FFF;
+  text-align: center;
+}
+
+/* Form wrapper */
+form {
+  padding: 20px;
+  width: 380px;
+  margin: 0 auto;
+  margin-top: 300px;
+}
+
+/* Segment (title, icon row, etc.) */
+.segment {
+  padding: 32px 0;
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Inputs */
+label {
+  display: block;
+  margin-bottom: 24px;
+  width: 100%;
+}
+
+input {
+  width: 100%;
+  padding: 16px;
+  border: none;
+  outline: none;
+  border-radius: 320px;
+  background-color: #EBECF0;
+  box-shadow: inset 2px 2px 5px #BABECC, inset -5px -5px 10px #FFF;
+  font-size: 26px;
+  transition: all 0.2s ease-in-out;
+  color: #61677C; 
+  appearance: none; 
+}
+
+input::placeholder {
+  color: #BABECC;
+}
+
+input:focus {
+  box-shadow: inset 1px 1px 2px #BABECC, inset -1px -1px 2px #FFF;
+}
+
+/* Buttons */
+button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  border-radius: 320px;
+  background-color: #EBECF0;
+  box-shadow: -5px -5px 20px #FFF, 5px 5px 20px #BABECC;
+  transition: all 0.2s ease-in-out;
+  font-weight: 600;
+  font-size: 16px;
+  color: #61677C;
+  padding: 16px 24px;
+  margin: 0;
+  border-radius: 10px;
+}
+
+button:hover {
+  box-shadow: -2px -2px 5px #FFF, 2px 2px 5px #BABECC;
+}
+
+button:active {
+  box-shadow: inset 1px 1px 2px #BABECC, inset -1px -1px 2px #FFF;
+}
+
+/* Special “Log in” button with red text/icon */
+.login-btn {
+  color: #B41B1B; /* Red text */
+  font-size: 26px;
+  width: 380px;
+  border-radius: 40px;
+}
+
+/* Ionicon margin */
+.login-btn .icon {
+  margin-right: 8px;
+}
+
+/* Icon row buttons */
+.icon-row {
+  display: flex;
+  justify-content: center;
+  gap: 16px; /* space between icon buttons */
+}
+
+/* Smaller “unit” icon buttons in the icon row and search button */
+.unit {
+  width: 48px;
+  height: 48px;
+  font-size: 22px;
+  padding: 0; /* so icons center nicely */
+  color: #61677C;
+}
+
+/* Input group for email + search button */
+.input-group {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px; /* space between input and button */
+  margin-top: 24px;
+}
+
+.input-group label {
+  margin: 0;
+  flex: 1;
+}
