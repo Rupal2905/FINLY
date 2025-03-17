@@ -41,6 +41,123 @@ body {
     height: 40px;   
 }
 
+/* Sidebar Styling */
+.sidebar {
+    width: 250px;
+    background-color: black;
+    padding: 20px;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+.sidebar a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.sidebar a:hover {
+    background: #000;
+}
+
+/* Main Content Area */
+.main-content {
+    margin-left: 270px;
+    padding: 20px;
+    flex-grow: 1;
+}
+
+/* Chart Containers */
+.chart-container {
+    background: #111;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+/* Sidebar Styles */
+.sidebar {
+    width: 300px;
+    height: 100vh;
+    background: transparent;
+    color: white;
+    position: fixed;
+    top: 30px;
+    left: 0;
+    overflow-y: auto;
+    transition: width 0.3s ease-in-out;
+    padding-top: 70px;
+}
+
+.sidebar.closed {
+    width: 40px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar .menu-section {
+    padding: 10px 15px;
+    font-size: 1px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.sidebar ul li {
+    padding: 12px;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    color: white;
+}
+
+.sidebar ul li:hover {
+    background: #000;
+}
+
+.sidebar ul li i {
+    font-size: 18px;
+}
+
+/* Submenus */
+.submenu {
+    padding-left: 20px;
+}
+
+.submenu li {
+    font-size: 14px;
+}
+
+/* Hamburger Menu */
+.hamburger {
+    position: fixed; /* Ensure it's outside the sidebar */
+    top: 15px;
+    left: 15px;
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+    z-index: 1001; /* Ensure it's above everything */
+    background: #111; /* Match sidebar */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+/* Hide text when sidebar is closed */
+.sidebar.closed .menu-section,
+.sidebar.closed ul li span {
+    display: none;
+}
+
 /* Hero Section */
 .hero-section {
     text-align: center;
