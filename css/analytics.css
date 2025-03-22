@@ -1,0 +1,65 @@
+/* General Page Styling */
+body {
+    background-color: #000;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+/* Navigation Bar */
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 80px;
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+.nav-links a:hover {
+    color: #71bef1;
+}
+.nav-brand {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+.nav-brand .logo {
+    height: 40px;
+    
+}
+
+/* Styling for the main content */
+h1 {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 2em;
+}
+
+/* Power BI iframe container */
+.iframe-container {
+    padding: 50px;
+    margin-top: 200px; /* Ensure space between navbar and iframe */
+    text-align: center;
+    position: relative;
+}
+
+/* iframe styling */
+iframe {
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
